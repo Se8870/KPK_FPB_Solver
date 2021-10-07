@@ -13,3 +13,7 @@ Dengan 3 input:
 
 ![](img/preview_2.png)
 
+## Credits
+
+* FPB method - https://bit.ly/3FsnjeH
+* Inspiration - https://github.com/anastasyaviviana/Latihan_Ujian_FPB_KPK
