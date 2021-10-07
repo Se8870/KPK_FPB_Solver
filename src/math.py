@@ -1,34 +1,34 @@
+# untuk digunakan dalam penghitungan
+# sekala besar.
+from functools import reduce
 
-def FPB(x, y, z = 0):
+def FPB(*args: int):
     """
-    Mengambil data dari X, Y, dan Z (Jika Z tersedia)
+    Mengambil data dari dalam args (jika terdedia)
     dan membaginya hingga paling terkecil
 
     Returns:
-    hasil pembagian dari X, Y, dan Z (Jika Z tersedia)
+    hasil pembagian dari jumlah yang disimpan dalam args
     """
-    while (y):
-        x, y = y, x % y
+    def do_math(x, y):
+        while (y):
+            x, y = y, x % y
+        return x
 
-    if z != 0:
-        return FPB(z, x)
-
-    return x
-
-def KPK(x, y, z = 0):
+	return reduce(do_math, args)
+	
+def KPK(*args: int):
     """
-    Mengambil data dari X, Y, dan Z (Jika Z tersedia)
+    Mengambil data dari dalam args (jika terdedia)
     dan mengkalikan semua untuk mendapatkan hasil
 
     Returns:
-    hasil perkalian dari X, Y, dan Z (Jika Z tersedia)
+    hasil perkalian dari jumlah yang disimpan dalam args
     """
-    ret = int(x*y/FPB(x, y))
+    def do_math(x, y):
+        return int(x*y//FPB(x,y))
 
-    if z != 0:
-        return KPK(ret, z)
-        
-    return ret
+    return reduce(do_math, args)
 
 factor_a = int(input("Masukkan angka pertama: "))
 factor_b = int(input("Masukkan angka kedua: "))
