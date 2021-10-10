@@ -11,4 +11,5 @@ Support 3 input atau lebih, tergantung pemakaian.
 ## Credits
 
 * FPB method - https://bit.ly/3FsnjeH
+* Cheaterman - Helping me for the algorithm stuff
 * Inspiration - https://github.com/anastasyaviviana/Latihan_Ujian_FPB_KPK
