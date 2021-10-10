@@ -5,8 +5,9 @@ Support 3 input atau lebih, tergantung pemakaian.
 
 ## Preview
 
-![](img/preview_1.png)
-![](img/preview_2.png)
+![](img/preview_1.jpg)
+![](img/preview_2.jpg)
+![](img/preview_3.jpg)
 
 ## Credits
 
